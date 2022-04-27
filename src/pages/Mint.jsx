@@ -68,7 +68,7 @@ export default function Mint(props) {
 		<div className="page mint">
 			<h2>Click on an image to mint a token</h2>
 			{assetURIs.map((uri, idx) => (
-					<div onClick={() => DoMint(uri)} key={idx}>
+					<div className={uri} onClick={() => DoMint(uri)} key={idx}>
 						<img src={uri.replace('.json', '.png')} alt={'exobit_'+(idx+1)} />
 					</div>
 				)
