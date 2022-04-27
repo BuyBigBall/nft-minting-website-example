@@ -12,6 +12,9 @@ node_modules
 # production
 /build
 
+/artifacts
+/cache
+
 # misc
 .DS_Store
 .env.local
